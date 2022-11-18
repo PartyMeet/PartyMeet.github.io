@@ -1,9 +1,10 @@
 import React from 'react';
+import {Menu} from './components/Menu';
 
 export function App(){
     return (
-        <h1 className="text-3xl font-bold underline">
-            Hello world!
-        </h1>
+        <>
+            <Menu />
+        </>
     );
 }
