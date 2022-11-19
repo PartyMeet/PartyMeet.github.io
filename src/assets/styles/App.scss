@@ -2,12 +2,33 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+// Vars
+$orange: #fb9330;
+
+// Initial
+html {
+    overflow-x: hidden;
+}
+
 // landing page sections
 section:nth-child(1){
     background-image: url('.././img/bg.png');
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
+
+    h1 {
+        position: absolute;
+        letter-spacing: 10px;
+
+        transform: translate(-50%, 0%);
+        left: 50%;
+        margin-top: 150px;
+
+        mix-blend-mode: darken;
+    }
 }
 
 
@@ -26,4 +47,40 @@ section:nth-child(1){
 svg {
     display: inline-block;
     height: 100%;
+}
+
+.about {
+    font-family: 'Roboto';
+    text-align: center;
+    h2 {
+        top: 300px;
+    }
+
+    .section-box {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 350px;
+
+        p:first-child:first-letter {
+            font-weight: 100;
+            color: $orange;
+            font-family: 'Georgia';
+            float: left;
+            font-size:80px;
+            line-height:  0.7;
+            padding: 2px 9px 0 0;
+         }
+
+        img {
+            width: 250px;
+        }
+    }
+}
+
+.fade {
+    opacity: 1;
+    margin: 0;
+    transition: 0.2s ease;
 }
