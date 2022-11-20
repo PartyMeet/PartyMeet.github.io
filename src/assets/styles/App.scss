@@ -5,11 +5,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 // Vars
+$grey: #253334;
 $orange: #fb9330;
+$dark: #f4f4f4;
+$bg: #161616;
 
 // Initial
 html {
     overflow-x: hidden;
+    background-color: #f4f4f4;
 }
 
 // landing page sections
@@ -18,6 +22,10 @@ section:nth-child(1){
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
+
+    background-color: #f4f4f4;
+
+    height: 100vh;
 
     h1 {
         position: absolute;
@@ -29,6 +37,31 @@ section:nth-child(1){
 
         mix-blend-mode: darken;
     }
+}
+
+section:nth-child(2){
+    height: 75vh;
+    background-color: $dark;
+}
+
+section:nth-child(3){
+    background-color: $dark;
+
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    justify-content: center;
+
+    h2 {
+        position: absolute;
+        letter-spacing: 10px;
+
+        top: 40px;
+
+        mix-blend-mode: darken;
+    }
+    
 }
 
 
@@ -75,12 +108,14 @@ svg {
 
         img {
             width: 250px;
+            z-index: 1;
         }
     }
 }
 
 .fade {
     opacity: 1;
-    margin: 0;
-    transition: 0.2s ease;
+    margin-left: 0;
+    margin-right: 0;
+    transition: 0.4s ease;
 }
