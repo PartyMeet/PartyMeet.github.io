@@ -1,6 +1,7 @@
 import React from 'react'   
 import {Nav} from './Nav'
 import {About} from './About'
+import {Sections} from './Sections'
 import Logo from "../assets/img/logo_light.png"
 import '../assets/styles/Menu.scss'
 
@@ -30,7 +31,9 @@ export function Menu() {
                     <span></span>
                 </div>
             </div>
+            
             < About />
+            < Sections />
         </>
     )
 }

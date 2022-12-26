@@ -1,4 +1,5 @@
 $(function(){
+  
     // FADE ON SCROLL
     $(window).on("load",function() {
         $(window).scroll(function() {
