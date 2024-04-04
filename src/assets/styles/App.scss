@@ -13,9 +13,14 @@ $bg: #161616;
 
 // Initial
 html {
-    overflow-x: hidden;
     background-color: #f4f4f4;
     cursor: none;
+}
+
+#app {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 // landing page sections
@@ -123,6 +128,10 @@ section:nth-child(3){
     section:nth-child(1){
         background-color: $bg;
         height: 250px;
+
+        margin: 0;
+        padding: 0;
+        width: 100%;
 
         display: flex;
         align-items: center;
